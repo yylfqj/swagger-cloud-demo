@@ -1,0 +1,2 @@
+# swagger-cloud-demo
+将swagger整合到spring cloud当中，并且把swagger配置到spring cloud gateway网关服务中，实现访问网关的swagger地址就能自由切换swagger
