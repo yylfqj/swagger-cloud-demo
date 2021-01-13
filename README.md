@@ -6,3 +6,7 @@
 ​	以下是yaml的routers配置的demo:
 
 ​	![image-20210113141744135](https://github.com/yylfqj/swagger-cloud-demo/blob/master/images/1610518589.jpg)
+
+## 原理：
+
+​	重写swagger的`SwaggerResourcesProvider`接口，重写它的`get()`方法。将`SwaggerResource`列表重新的从`gateway-service`服务的yaml文件的routers中读取出来。之后在`SwaggerHandler`中将swagger-resources重新配置
